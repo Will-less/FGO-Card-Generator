@@ -1,0 +1,86 @@
+body{
+  background: linear-gradient(-45deg, #F2F2F2 25%, #F5F5F5 0, #F5F5F5 50%, #F2F2F2 0, #F2F2F2 75%, #F5F5F5 0);
+  background-size: 100px 100px;
+}
+#main-container
+{
+  background: linear-gradient(45deg, #F2F2F2 25%, #F5F5F5 0, #F5F5F5 50%, #F2F2F2 0, #F2F2F2 75%, #F5F5F5 0);
+  background-size: 100px 100px;
+  border: 1px solid #E0E0E0;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+#Canvas-container
+{
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: FGO;
+  src: url('Font/honoka.woff') format("woff"),
+	  url('Font/honoka.ttf') format('truetype'); 
+}
+.toggle {
+  position: absolute;
+  visibility: hidden;
+}
+.toggle + label {
+  max-width: 250px;      
+  width: 100%;
+  height: 39px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  margin-bottom: 20px;
+}
+.toggle + label:before, .toggle + label:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 39px;
+}
+.toggle + label:after {
+  background-color: #1abc9c;
+  content: attr(data-on);
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.toggle + label:before {
+  background-color: #dddddd;
+  content: attr(data-off);
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+  color: black;
+}
+#gold + label { border: 1px solid #cacaca; }
+#gold + label:after { background: white; color: black; }
+#gold + label:before { background: #ffeb04; }
+.toggle:checked + label:before {
+  transform: rotateY(180deg);
+}
+.toggle:checked + label:after {
+  transform: rotateY(0deg);
+}
+.toggle_show:checked + label + div, .toggle_show + label + div + div {
+  display: none;
+}
+.toggle_show:checked + label + div + div, .toggle_show + label + div {
+  display: block;
+}
+
