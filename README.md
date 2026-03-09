@@ -2,7 +2,7 @@
 Contains every card frame from Aister's generator. Now including 0☆ and Beast 5☆ frames, Beast class and no class. 
 
 ## Background
-Forked from meguerreroa's FGO Card Generator project, what was forked from Aister's FGO + Canvas project
+Forked from ice-pendragon's fork of meguerreroa's FGO Card Generator project, which was forked from Aister's FGO + Canvas project
 Several projects that experiment on HTML5 canvas which is an expansion of juncaixinchi's original concept of using canvas to generate FGO cards.
 By changing font file to .woff format, now supports Google Chrome and Firefox.
 
